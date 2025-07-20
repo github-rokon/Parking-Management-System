@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('img/bg.png');
+    background-size: cover; /* This will make the image cover the entire background */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-attachment: fixed; /* This will make the background image fixed when scrolling */
+  }
+
+  .logo {
+    width: 200px; 
+    height: auto;
+    display: block;
+    margin: 30; 
+
+}
+
+  nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Background color of the nav bar */
+}
+
+nav ul li {
+    float: left; /* Align items horizontally */
+}
+
+nav ul li a {
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li a:hover {
+    background-color: #111; /* Change background on hover */
+}
+
+.parking-lot {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.slot {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.legend {
+    margin-top: 20px;
+}
+
+.legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.available {
+    background-color: green;
+}
+
+.booked {
+    background-color: red;
+}
+
+.confirmed {
+    background-color: blue;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.side-panel {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: -3px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #308459;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
